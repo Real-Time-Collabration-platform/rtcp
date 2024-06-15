@@ -1,11 +1,11 @@
-//A schema of documents which contains document id, data, owner, authorized users
+
 const mongoose = require("mongoose");
-//Schema Declarations
+
 const noteSchema = new mongoose.Schema({
     data: {
         type:String
     },
-    owner: {    //owner of email
+    owner: {    
         type:String,
         required : true
     },
